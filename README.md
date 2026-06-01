@@ -35,7 +35,7 @@ Con el siguiente script vamos a listar todas las regiones “Physical” disponi
 ```SHELL
 az policy assignment list  --subscription $(az account show --query id -o tsv)  --query "[?parameters.listOfAllowedLocations.value!=null].parameters.listOfAllowedLocations.value[]"  -o tsv
 ```
-
+[![Build and test of Java Project](https://github.com/bu0263/practicaGITHUBACTiona/actions/workflows/main.yml/badge.svg)](https://github.com/bu0263/practicaGITHUBACTiona/actions/workflows/main.yml)
 
 ## Recursos
 https://www.adictosaltrabajo.com/2020/10/28/introduccion-a-github-actions-sintaxis-basica/
